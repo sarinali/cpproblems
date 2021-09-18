@@ -26,13 +26,15 @@ int main() {
         int diff = ar[1]-ar[0];
         if (ar[2]-ar[1]==diff) {
             // arithmetic a1 + (n-1) diff
-            cout << (ar[0] + ((q-1)*diff))%MOD << "\n";
+            ll ans = (ar[0] + (q-1)*diff)%MOD;
+            cout << ans << "\n";
         } else {
             // geometric a1(r)^n-1
             ll ratio = ar[1]/ar[0];
             ll y = quickpow(ratio, q-1);
-            // cout << ((ar[0]%MOD)*(y%MOD))%MOD << "\n";
-            cout << (ar[0]*y)%MOD << "\n";
+            ll ans = ((ar[0]%MOD)*(y%MOD))%MOD;
+            cout << ans << "\n";
+            // cout << (ar[0]*y)%MOD << "\n";
         }
     }
     return 0;
