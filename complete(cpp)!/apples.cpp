@@ -9,7 +9,7 @@ void print() {
         if (i != v.size()-1) {
             cout << v[i] << "+";
         }else {
-            cout << v[i];
+            cout << v [i];
         }
     }
     cout << "\n";
