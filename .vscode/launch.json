@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch coci08c2p3",
+            "request": "launch",
+            "mainClass": "coci08c2p3",
+            "projectName": "test_918beba"
+        },
+        {
+            "type": "java",
             "name": "Launch combinations",
             "request": "launch",
             "mainClass": "combinations",
